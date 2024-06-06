@@ -7,21 +7,20 @@
 <meta charset="UTF-8">
 
 <title>"""
-the house on the hill stood tall
-
-casting looming shadows on the dilapidating townhouses and factories below. 
-
+the house on the hill stood tall, 
+casting looming shadows on the town below.
 they say no soul leaves that house quite the same. 
-whispers of a curse whirled around the town. 
-they say the house was a passageway to hell itself 
-with demonic creatures lurking the hallways. 
-and any soul who got caught up in the creature’s game would turn, 
+whispers of a curse whirled around. 
+some even say the house was a passageway to hell itself with demonic creatures lurking the hallways. 
+and any soul who got caught up in their games would betray the person they love most. 
 
-betraying those they love most. 
+so, the house stood there, 
 
-so it stood there alone. 
+alone. 
 
 untouched for many years. 
+
+waiting...
 
 waiting for you
 
@@ -32,21 +31,20 @@ the house on the hill{pg}an interactive fiction game.{pg}by Lara Scuri
 
 <script type="text/bitsyGameData" id="exportedGameData">
 """
-the house on the hill stood tall
-
-casting looming shadows on the dilapidating townhouses and factories below. 
-
+the house on the hill stood tall, 
+casting looming shadows on the town below.
 they say no soul leaves that house quite the same. 
-whispers of a curse whirled around the town. 
-they say the house was a passageway to hell itself 
-with demonic creatures lurking the hallways. 
-and any soul who got caught up in the creature’s game would turn, 
+whispers of a curse whirled around. 
+some even say the house was a passageway to hell itself with demonic creatures lurking the hallways. 
+and any soul who got caught up in their games would betray the person they love most. 
 
-betraying those they love most. 
+so, the house stood there, 
 
-so it stood there alone. 
+alone. 
 
 untouched for many years. 
+
+waiting...
 
 waiting for you
 
@@ -92,7 +90,6 @@ ROOM 2
 0,0,0,fk,ff,0,0,0,0,fb,0,fl,fo,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME kitchen
-ITM 4 11,12
 ITM d 8,10
 ITM b 13,8
 ITM 0 6,11
@@ -149,7 +146,7 @@ NAME hallway
 ITM j 15,12
 ITM 9 7,12
 ITM 8 1,12
-ITM i 0,12
+ITM x 0,12
 EXT 4,10 5 4,15
 EXT 15,12 7 4,15
 EXT 10,10 e 5,15
@@ -263,6 +260,7 @@ ko,ko,kl,kk,kn,kp,kp,kp,kj,ko,ko,ko,km,kj,kq,kq
 kj,kp,ko,kp,kq,kq,kk,kq,kn,ko,km,kp,kq,kn,kp,ko
 NAME ending room
 ITM w 4,10
+ITM y 5,10
 END 1i 5,10
 PAL 0
 
@@ -285,6 +283,7 @@ ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju
 ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju,ju
 NAME father's office copy 2
 ITM s 12,10
+ITM t 8,5
 EXT 4,15 4 15,12
 EXT 8,5 c 2,10
 PAL 0
@@ -6253,7 +6252,7 @@ TIL fp
 00000100
 00000100
 00000100
-11111100
+00000100
 
 TIL fq
 00000000
@@ -8651,7 +8650,6 @@ SPR n
 01111110
 01011010
 01111110
-DLG 1b
 
 SPR o
 00000000
@@ -8692,6 +8690,16 @@ SPR p
 01010101
 10101010
 01010101
+
+SPR q
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
 
 ITM 0
 00000000
@@ -8831,9 +8839,9 @@ ITM e
 00000000
 00000000
 00000000
-00000000
-00000000
-00000000
+00100010
+00010100
+00001000
 00000000
 00000000
 DLG u
@@ -8869,17 +8877,6 @@ ITM h
 11111111
 11111111
 DLG 11
-
-ITM i
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-DLG 12
 
 ITM j
 00000001
@@ -8957,6 +8954,7 @@ ITM p
 00000000
 00000000
 00000000
+NAME teen room
 DLG w
 
 ITM q
@@ -8996,10 +8994,10 @@ ITM s
 10101010
 01010101
 10101010
-01010101
-10101010
-01010101
-10101010
+11010101
+11111010
+01011101
+10101110
 >
 10101010
 01010101
@@ -9050,6 +9048,7 @@ ITM v
 00000000
 00000000
 00000000
+DLG 1l
 
 ITM w
 01000000
@@ -9062,13 +9061,34 @@ ITM w
 10000000
 DLG 1j
 
+ITM x
+10000000
+10000000
+10000000
+10000000
+10000000
+10000000
+10000000
+10000000
+DLG 1k
+
+ITM y
+00000000
+10000010
+00010000
+01000100
+00000001
+00000100
+01000000
+00000100
+
 DLG 0
 I'm a cat
 NAME cat dialog
 
 DLG 1
 """
-a coffee mug, half full with stale coffee. 
+a coffee mug, half full of stale coffee.  
 {pg}whoever left...{pg}left in a haste
 """
 NAME tea dialog
@@ -9083,19 +9103,16 @@ NAME chair dialog
 
 DLG 10
 a clutter of dirty dishes stacked up. {pg}
-NAME item g dialog
+NAME dishes
 
 DLG 11
 """
-a houseplant. {pg}it wilts{pg}craving the warmth of sunlight
+A wilted houseplant.
 
-this house is deprived of.
+craving the warmth of sunlight
+
 """
 NAME houseplant dialogue
-
-DLG 12
-someone has locked the door.
-NAME lock door dialogue
 
 DLG 13
 """
@@ -9103,81 +9120,77 @@ DLG 13
 
 ...
 
-it's you.{pg}{shk}scoffs{/shk}
+{drws "papa sprite"} it's you.{pg}{shk}scoffs{/shk}
 
-look what the cat dragged in!
+{drws "papa sprite"} look what the cat dragged in!
 
 {shk}back from the big smoke!{/shk}
 
-bet you think you're better than me now? 
-just remember. 
+{drws "papa sprite"} bet you think you're better than me now? 
+{drws "papa sprite"} just remember. 
 
-i raised you. {pg}always knew you'd run back.
+{drws "papa sprite"} i raised you. {pg}{drws "papa sprite"} always knew you'd run back.
 
-tail between your legs. 
+{drws "papa sprite"} tail between your legs. 
 
-you never did have much of a spine. 
+{drws "papa sprite"} you never did have much of a spine. 
 ...
 
-suppose your like your mother in that sense.
-always have been more like her than me.
-god. 
+{drws "papa sprite"} suppose your like your mother in that sense.
+{drws "papa sprite"} always have been more like her than me.
+{drws "papa sprite"} god. 
 
-you even look like her.
-
-...
-
-such an awful fate daughters have.
-
+{drws "papa sprite"} you even look like her.
 
 ...
 
-well...
+{drws "papa sprite"} such an awful fate daughters have.
+
+
+...
+
+{drws "papa sprite"} well...
 
 ... 
 
-did you speak to her. 
+{drws "papa sprite"} did you speak to her. 
 
 ...
 
-she doesn't speak to me anymore.
+{drws "papa sprite"} she doesn't speak to me anymore.
+{drws "papa sprite"} i've tried. 
 
-i've tried. 
+{drws "papa sprite"} i guess...
 
-i guess...
+{drws "papa sprite"} {shk}coughs{/shk}
 
-{shk}coughs{/shk}
+{drws "papa sprite"} for what it's worth. i loved her. 
+{drws "papa sprite"} of course i did. 
 
-for what it's worth. i loved her. 
-of course i did. 
+{drws "papa sprite"} she's the mother of my child. 
 
-she's the mother of my child. 
-
-for goodness sake, i'm not evil!
-
-i- i didn't mean for it all to happen. 
+{drws "papa sprite"} for goodness sake, i'm not evil!
+{drws "papa sprite"} i- i didn't mean for it all to happen. 
 ...
-{pg}maybe you think i'm horrible but 
+{pg}{drws "papa sprite"} maybe you think i'm horrible but i have to live with myself.
+{drws "papa sprite"} you and your mother might have suffered because of my shitty actions but i have to sleep at night knowing i am this fucking piece of shit and its like i don't even know why i am. 
+{pg}{drws "papa sprite"} i had to live with the fact that you left because of me and how that hurt your mother.
 
-i have to live with myself.
-
-you and your mother might have suffered because of my shitty actions but i have to sleep at night knowing i am this fucking piece of shit and its like i don't even know why i am. 
-{pg}i had to live with the fact that you left because of me and how that hurt your mother.
-i have to live with that. {pg}...are you gonna leave. 
+{drws "papa sprite"} i have to live with that. {pg}{drws "papa sprite"} ...are you gonna leave. 
 
 ...
 
-please talk to me...
+{drws "papa sprite"} please talk to me...
 
-don't leave me. 
+{drws "papa sprite"} don't leave me. 
 
-synthia. 
+{drws "papa sprite"} synthia. 
 
-{shk}SYNTHIA{/shk}
+{drws "papa sprite"} {shk}SYNTHIA{/shk}
 
-{shk}answer me{/shk}
+{drws "papa sprite"} {shk}answer me{/shk}
 
-{shk}please{/shk}{pg}...the tears falling down his face
+{drws "papa sprite"} {shk}please{/shk}{pg}...the tears falling down his face
 freeze on contact with the bitter air. 
 you can't help but stare into his eyes
 black tar abysses, sucking you in. 
@@ -9197,11 +9210,7 @@ somehow...
 
 ...
 
-this room is colder.
-
-...
-
-it felt as if this place was the furthest thing from the sun
+this room felt like the furthest thing from the sun.
 ...
 
 smoke fills the air. 
@@ -9212,9 +9221,7 @@ a voice
 
 breaks through the mist. 
 
-{drws "papa sprite"} you know, it is horribly rude to enter a room without knocking. 
-
-{pg}...
+{drws "papa sprite"} you know, it is horribly rude to enter a room without knocking. {pg}...
 
 your stomach plummets. 
 
@@ -9225,18 +9232,14 @@ his eyes leer at you.
 you know you should turn around. 
 
 you know this isn't going to end well. 
+
+
 """
-NAME item k dialog
-
-DLG 15
-...{pg}
-
-DLG 16
- 
+NAME enter fathers room
 
 DLG 17
 """
-{shk}ring ring ring{/shk}{pg}...{pg}{shk}ring ring ring{/shk}{pg}it's your brother, mike.
+{shk}ring ring ring{/shk}{pg}...{pg}{shk}ring ring ring{/shk}{pg}it is your brother, mike.
 {pg}you let it go to voicemail
 {pg}{drws "f"} kate, please answer. mum is really sorry. she never meant to keep this from you. {pg}...
 """
@@ -9253,7 +9256,7 @@ a constant buzzing.
 it's quite irritating. actually.
 
 ... 
-{pg}as you stare into the pixels, jolting and moving about, you become immersed in its world.{pg}you begin to notice small, miniscule differences in pitch and tone. you memorise all the patterns. {pg}until suddenly. 
+{pg}as you stare into the pixels, jolting and moving about,{pg}you begin to notice small, miniscule differences in pitch and tone. you memorise all the patterns. {pg}until suddenly. 
 
 you swear. 
 
@@ -9275,12 +9278,12 @@ DLG 19
 {pg}books. 
 
 the spines are all cracked and creased. 
-the pages are stained a horrid yellow. 
+the pages stained a horrid yellow. 
+{pg}you wonder if the people who lived here 
+{pg}who read these books on that couch
+{pg}knew in 50 years...
 
-
-{pg}you wonder if the people who once lived here 
-{pg}who probably read these books curled up on that couch
-{pg}knew 50 years later their home would become a work of fiction.
+their home would become a work of fiction.
 {pg}a place mythologised in the minds and eyes of children who ride past on their way to school.
 
 """
@@ -9292,107 +9295,96 @@ DLG b
 
 ...{pg}{drws "mum"} why?{pg}{drws "A"} what are you still doing here?{pg}{drws "mum"} ...
 
-oh
+{drws "mum"} oh
 
-i suppose i'll always here. 
+{drws "mum"} i suppose i'll always be here. 
+{drws "mum"} in this house.
 
-i'm always in this house.
+{drws "mum"} in this room. 
 
-in this room. 
-
-this place took every piece of me.
-i can't untie myself from it.
-
-but
+{drws "mum"} i can't untie myself from it.
 
 ...
 
-i'm glad you came back though. 
+{drws "mum"} but i'm glad you're here. 
 
-i missed you.{pg}{drws "A"} i'm not who you think i am. {pg}{drws "mum"} oh...
+{drws "mum"} i missed you.{pg}{drws "A"} i'm not who you think i am. {pg}{drws "mum"} oh...
 
-well...
+{drws "mum"} well...
 
-you look so much like her. 
+{drws "mum"} you look so much like her. 
 
-you have the same eyes. 
+{drws "mum"} you have the same eyes. 
 
-there my eyes but...
+{drws "mum"} they’re my eyes but...
 
-heh
+{drws "mum"} it's funny. 
 
-it's funny. 
+{drws "mum"} i used to hate my eyes but 
 
-i used to hate my eyes but 
+{drws "mum"} when they became hers...
 
-when they became hers...
+{drws "mum"} i thought...
 
-i thought.
-
+{drws "mum"} how could anyone hate those eyes? 
 ...
+{pg}{drws "A"} what happened to you? what happened to this house. i have to know.{pg}{drws "mum"} i thought everyone did know. 
 
-how could anyone those eyes? {pg}{drws "A"} what happened to you? what happened to this house. i have to know.{pg}{drws "mum"} no... no... i can't.
-
+{drws "mum"} everyone looked at me like they knew. 
+{drws "mum"} they whispered about it at church. 
 {pg}...
 
 {drws "A"} please.
 
 ...{pg}{drws "mum"} you know...
  
-i wish i could tell everyone what happened.
-but i can't control anything anymore.
-what people hear. what they make up.
-all my memories
+{drws "mum"} i wish i could tell everyone what happened.
+{drws "mum"} but i can't control anything anymore.
+{drws "mum"} what people hear. what they make up.
+{drws "mum"} all my memories
 
-who i am 
+{drws "mum"} who i am 
 
-it has been reduced to is what happened to me.
-all i am is what he did. 
+{drws "mum"} it has been reduced to what happened to me.
+{drws "mum"} all i am is what he did. 
 
-suppose that's all i ever was in the end. 
-what i was in relation to him.
+{drws "mum"} suppose that's all i ever was in the end. 
+{drws "mum"} what i was in relation to him.
+{drws "mum"} {shk}heh{/shk}
 
-... {shk}heh{/shk}
+{drws "mum"} what a waste{pg}{drws "A"} does it have to be that way? {pg}{drws "mum"} but it is.
 
-what a waste{pg}{drws "A"} ...
+{drws "mum"} i wish i knew what i know now then. 
+{drws "mum"} i was so foolish. 
 
-does it have to be that way? {pg}{drws "mum"} but it is.
+{drws "mum"} i blamed everything. 
 
-i wish i knew what i know now then. 
-i was so foolish. 
+{drws "mum"} i blamed the heavens. 
 
-i blamed everything. 
+{drws "mum"} some unforgiving god.
 
-i blamed the heavens. 
+{drws "mum"} i cursed the fates for spinning this into fruition long before i could even touched the thread. 
+{drws "mum"} and now. i'm stuck in this house. 
+{drws "mum"} collecting dust. 
 
-some unforgiving god.
+{drws "mum"} and all i can think about is...
+{drws "mum"} is it my fault too? 
 
-i cursed the fates for spinning this into fruition long before i even touched the thread. 
-but now. i'm stuck in this house. 
+{drws "A"} of course not.
 
-collecting dust. 
+{drws "mum"} i wish i was stronger.  
 
-and all i can think about is...
+{drws "mum"} my silence hurt her.
 
-it's my fault too. 
-
-i should've been stronger. 
-
-i could've fought back. 
-
-and my silence hurt her.
-
-it made her leave.
+{drws "mum"} it made her leave.
 
 ... 
 
-do you think she forgives me? {pg}{drws "A"} she forgives you. 
+{drws "mum"} do you think she forgives me?{pg}{drws "A"} she forgives you. 
 
-{pg}for the first time, 
+{pg}and for the first time, 
 
-she smiles
-
-
+the woman smiles
  
 
 
@@ -9413,14 +9405,13 @@ NAME smashed photo dialog
 DLG m
 """
 family portraits adorn the walls. 
-a mother, a father, a daughter.{pg}their vacant eyes stare you down. 
-as you move down the hallway{pg}the daughter...
+a mother, a father, a daughter.{pg}their vacant eyes stare you down. {pg}you notice the daughter first, 
 
-the rosy peaks of her cheeks drain
+and how the rosy peaks of her cheeks drain
 as the years drag on. 
 
 her face becomes much like her mothers. 
-sunken eyes and tear stained cheeks. {pg}...those stories shared underneath the glow of a campfire have never felt more real. {pg}you could always turn around...
+sunken eyes and tear-stained cheeks. {pg}...those stories shared underneath the glow of a campfire have never felt more real {pg}you could always turn around...
 
 """
 NAME family port dialog
@@ -9437,19 +9428,18 @@ and empty.
 
 your footsteps echo. 
 
-the floorboard creaks under weight of your step. 
+the floorboard creaks under the weight of your step. 
 you don't remember how you got here. 
 just that you’re here. 
-{pg}and something about this house makes you bones heavy and your stomach churn.
-{pg}...{pg}well... your mother did always say that curiosity is your fatal flaw.
-
+{pg}and something about this house makes your bones heavy and your stomach churn.
+{pg}...{pg}well... your mother always said curiosity was your fatal flaw.
 even now, you can hear her voice echoing in your mind. 
 you should turn around. you should go home. 
 but something is pulling you in. 
 
 intrigue or a demonic presence, 
 
-who knows. 
+who knows? 
 
 you have become a foolish moth to a blazing flame.
 """
@@ -9457,9 +9447,8 @@ NAME enter on kitchen
 
 DLG t
 """
-you wonder how long this house has been abandoned.
 a thick layer of dust has settled on every countertop... 
-{pg}every surface
+{pg}and every surface
 """
 NAME dust dialogue
 
@@ -9471,28 +9460,25 @@ DLG w
 """
 everything is tidy.{pg}place meticulously...{pg}it is so unlike the other rooms you have explored.
 {pg}where things feel unfinished.
-{pg}there intention here.
+{pg}there is intention here.
 """
 NAME teens room
 
 DLG x
-aww a teddy bear.{pg}...you remember having one of these when you were younger. {pg}
+aww, a teddy bear.{pg}...you remember having one like this when you were younger. {pg}
 NAME teddy bear
 
 DLG y
 """
-pieces of paper, folded up, address to 'mum'{pg}dear mum,
+a piece of paper, folded up.{pg}dear mum,
 
-i think one of the biggest tragedies in life are what we don’t say. 
-
-all those unsaid things we keep hidden away in the darkest corner of our mind 
+i think one of the biggest tragedies in life are all those unsaid things we keep hidden away in the darkest corner of our mind 
 
 hoping they never reach daylight. 
-i know they’re things i wanted to say to you before i left 
+i know there are things i wanted to say to you before i left 
 but i didn't.
 
-but i’m going to say them now.
-{pg}i'm sorry.
+but i’m going to say them now.{pg}i'm sorry.
 
 i'm so sorry i left. 
 
@@ -9502,22 +9488,20 @@ i just
 
 couldn't live in that house any longer.
 i felt like it was poisoning me. 
+ {pg}i wanted to tell you 
 
-slowly killing me. {pg}i think you out of everyone would understand. 
 but...
 
-i knew you if i told you 
+i also knew if i told you you would try and stop me. 
+{pg}i hope you find it in your heart to forgive me. 
+i've left my number if you do want to talk. 
+i miss you so much. 
+{pg}i feel like i need you more now than when i was a child.
+{pg}funny that. 
 
-you would try to stop me. 
+all my love,
 
-and i needed to leave before it killed me{pg}i hope you find it in your heart to forgive me. 
-i've left my number if you want to call and talk. 
-i just want you to know i think of you everyday. 
-everything reminds me of you. {pg}somehow, I need you more now than when I was kid. 
-funny that.
-{pg}all my love,
-
-Synthia.
+synthia.
 
 ...{pg}you pocket the note without a thought. 
 {hasletter = 1}
@@ -9534,41 +9518,13 @@ it envelopes you in like warm embrace.{pg}
 """
 NAME mamma room dialogue
 
-DLG 1a
-"""
-a plethora of books 
-
-all well loved and read. the pages tinged yellow
-
-the spines broken over and over again. 
-
-some childrens books like enid blyton all the way to large philosophy books.  
-"""
-NAME exit narration 1
-
-DLG 1b
-"""
-{wvy}music{/wvy}
-
-"""
-NAME music box
-
 DLG 1c
 """
 medication. 
 
-zoloft 
-
-prescribed to "Katherine Humpford".
+prescribed to "katherine humpford".
 half empty.
 
-ironic. 
-
-heh.
-
-...
-
-that's your name...
 """
 NAME item q dialog
 
@@ -9576,12 +9532,8 @@ DLG 1d
 """
 ...
 
-a shadow falls on the room.
-
-you suppose you weren't so alone here after all.
-a woman in a dressing gown. 
-
-the woman from the photos.
+you suppose you weren't so alone after all.
+It’s the woman from the photos.
 
 her eyes still sunken.
 
@@ -9589,9 +9541,9 @@ her lips cracked and pale.
 
 she doesn't look at you. 
 
-but through you. 
+rather, through you. 
 
-as if you were the ghost haunting the house.
+as if you were the ghost.
 
 """
 NAME item r dialog
@@ -9615,9 +9567,6 @@ before
 
 ...
 
-win
-
-dow.
 
 
 
@@ -9658,21 +9607,8 @@ DLG 1h
 a letter. ripped up. 
 
 everyday i come home to a different version of you
-and most of them scary me. you scare me.
-when we first met, if there was one thing i thought i could trust
+and most of them scare me. you scare me.
 
-it was us. 
-
-but i don't have that faith in us anymore.
-i don't have faith in you.
-
-it's all gone. 
-
-and now so is Synthia. 
-
-so where does that leave us?
-
-we're just two ghosts dancing around the truth. 
 """
 NAME item u dialog
 
@@ -9683,16 +9619,18 @@ NAME ending 1
 DLG 1j
 """
 all the stories you heard when you were younger
-of demons and ghosts living amongst the wall feel trivial now.
+of demons and ghosts living amongst these walls feels trivial now.
 
-a bunch of make believe disguising the true horrors that happened at the house on the hill.
+a bunch of make-believe disguising masking the truth. 
+
 
 {pg}no one ever leaves the house on the hill the same. 
 
  
-{pg}you don't leave the house on the hill the same. {pg}you leave it knowing why your mother grows quiet when her parents are brought up.{pg}why she never indulges in the myths told on camping trips with dad’s family. {pg}why sometimes… 
+{pg}you don't leave the house on the hill the same. {pg}you leave it knowing why your mother is so quiet. {pg}why she never talks about her parents.
+why she named you katherine. {pg}why sometimes… 
 
-she cannot leave her bed for days. {pg}why sometimes she looks at you the way she does. {pg}like she can never truly love you the way you want her too.{pg}pieces of her remain trapped in that house. 
+she cannot leave her bed for days. {pg}why she looks at you the way she does. {pg}like she can never truly love you the way you want her too.{pg}pieces of her remain trapped in that house. 
 and she can never get them back. 
 
 you clutch the letters close to your chest.
@@ -9702,8 +9640,23 @@ you take a deep breath.
 
 and make your way home. 
 
+
 """
 NAME item w dialog
+
+DLG 1k
+"""
+how strange... 
+
+the door is locked. 
+
+...
+"""
+NAME door locked
+
+DLG 1l
+
+NAME item v dialog
 
 VAR a
 42
@@ -9712,9 +9665,6 @@ VAR hasletter
 1
 
 TUNE 2
-f,s,m,f,d3,d3,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
->
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 >
@@ -9723,31 +9673,36 @@ f,s,m,f,d3,d3,0,0,0,0,0,0,0,0,0,0
 >
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KEY C,D,D#,F,G,G#,A# d,r,m,f,s,l,t
+>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KEY C,D,E,F,G,A,B d,r,m,f,s,l,t
 TMP SLW
-SQR P4 P8
+SQR P8 P8
 ARP INT5
 
 
 </script>
 
 <style>
-/*html { height: 592px; }*/
+html {
+	margin:0px;
+	padding:0px;
+}
 
 body {
-	width:100%;
-	height:100%;
+	margin:0px;
+	padding:0px;
 	overflow:hidden;
 	background:#ffffff;
 }
 
 #game {
 	background:black;
-	margin: 0 auto;
-	margin-top: 40px;
-	display: block;
-	width:512px;
-	height:@@Z;
+	width:100vw;
+	max-width:100vh;
+	margin:auto;
+	display:block;
 }
 </style>
 
@@ -21481,7 +21436,16 @@ CHAR 9835
 <body onload='startExportedGame()'>
 	<!-- GAME CANVAS -->
 	<canvas id='game'></canvas>
-</body>
+<audio id="for game.wav" src="for game.wav" autoplay loop></audio> 
+<script>
+function unmute() {
+    document.getElementById("for game.wav").play();
+    document.removeEventListener('pointerup', unmute);
+    document.removeEventListener('keydown', unmute);
+}
+document.addEventListener('pointerup', unmute);
+document.addEventListener('keydown', unmute);
+</script></body>
 
 
 </html>
